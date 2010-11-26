@@ -1,0 +1,16 @@
+<html>
+  <head><title>Example</title>
+     </head>
+  <body>
+    Page 1.
+    <a href="./page2.html">Click here, then hit your back button</a>
+    <script type="text/javascript">
+      if( window.location.hash && window.location.hash != "" ){ 
+        alert("Back-button or soft-refresh encountered with hash, forcing reload"); // nuke this line
+        window.location.hash = "";
+      }
+      window.location.hash = "#.";
+    </script>
+  </body>
+</html>
+
